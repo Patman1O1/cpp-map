@@ -5,30 +5,30 @@ include(GoogleTest)
 enable_testing()
 
 #-----------------------------------------------------------------------------------------------------------------------
-# Target: cpp_map_test
-# Alias: collections::cpp_map_test
+# Target: map_test
+# Alias: collections::map_test
 # Type: Executable
-# Dependencies: GTest::gtest_main, GTest::gmock_main, collections::cpp_map_headers
+# Dependencies: GTest::gtest_main, GTest::gmock_main, collections::map_headers
 #-----------------------------------------------------------------------------------------------------------------------
 # Target definition
-add_executable(cpp_map_test)
+add_executable(map_test)
 
 # Target alias
-add_executable(collections::cpp_map_test ALIAS cpp_map_test)
+add_executable(collections::map_test ALIAS map_test)
 
 # Target sources
-target_sources(cpp_map_test
+target_sources(map_test
     PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/cpp_map_test.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/map_test.cpp
 )
 
 # Target dependencies
-target_link_libraries(cpp_map_test
+target_link_libraries(map_test
     PRIVATE
-        collections::cpp_map_headers
+        collections::map_headers
         GTest::gtest_main
         GTest::gmock_main
 )
 
 # Test discovery
-gtest_discover_tests(cpp_map_test)
+gtest_discover_tests(map_test)
