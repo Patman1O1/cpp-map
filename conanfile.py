@@ -2,8 +2,8 @@ from conan import ConanFile
 from conan.tools.cmake import CMake, CMakeToolchain, CMakeDeps, cmake_layout
 import os
 
-class CppMap(ConanFile):
-    name = "cpp_map"
+class Map(ConanFile):
+    name = "map"
     version = "0.1.0"
     author = "Patman1O1"
     description = ""
@@ -44,6 +44,6 @@ class CppMap(ConanFile):
     def package(self) -> None: CMake(self).install()
 
     def package_info(self) -> None:
-        self.cpp_info.set_property("cmake_target_name", "collections::cpp_map")
+        self.cpp_info.set_property("cmake_target_name", "collections::map")
         self.cpp_info.bindirs = []
         self.cpp_info.libdirs = []
