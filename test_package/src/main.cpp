@@ -5,7 +5,7 @@
 #include <iostream>
 
 // Local Includes
-#include <collections/cpp_map.hpp>
+#include <collections/map.hpp>
 
 auto main() -> int {
     std::println(std::cout, "Hello world!");
