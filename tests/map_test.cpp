@@ -3,8 +3,8 @@
 #include <gmock/gmock.h>
 
 // Local Includes
-#include <collections/cpp_map.hpp>
+#include <collections/map.hpp>
 
-namespace cpp_map_testing {
+namespace collections::map_testing {
 
-} // namespace cpp_map_testing
+} // namespace collections::map_testing
